@@ -1,0 +1,33 @@
+.tube {
+  width: 100px;
+  height: 300px;
+  bottom: -100px;
+  border: 10px solid white;
+  border-top-style: none;
+  position: relative;
+  transition: 0.5s;
+  padding: 3px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3, 1fr); */
+  place-items: center;
+}
+
+.tube:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+.tube i {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 200px;
+  height: 100px;
+  top: -100px;
+  left: -50px;
+  background-color: #242424;
+  /* border: 1px solid red; */
+}
